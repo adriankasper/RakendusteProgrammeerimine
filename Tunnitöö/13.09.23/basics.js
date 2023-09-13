@@ -1,5 +1,8 @@
-let testArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-console.log(findMyIndex(testArray, 3));
+let numberArray = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+console.log(findMyIndex(numberArray, 3));
+console.log(addNumbers2(2)(4));
+console.log(newArray)
+
 
 function findMyIndex(array, element){
     return array.indexOf(element);
@@ -19,4 +22,8 @@ const addNumbers2 = (num1,num2) => {
     }
 }
 
-console.log(addNumbers2(2)(4))
+const nameString = (name) => `hello ${name}`
+
+const newArray = numberArray.map((element, index, array) => {return element + 5})
+
+const filterArray = numberArray.filter()
